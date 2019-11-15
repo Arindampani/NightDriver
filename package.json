@@ -1,0 +1,29 @@
+{
+  "name": "team-11",
+  "version": "0.0.1",
+  "devDependencies": {
+    "expose-loader": "^0.7.5",
+    "fork-ts-checker-webpack-plugin": "^1.5.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "prettier": "^1.18.2",
+    "serve": "^11.1.0",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.6.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.2",
+    "webpackbar": "4.0.0"
+  },
+  "dependencies": {
+    "phaser": "3.19.0"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "serve": "npm run build && serve ./",
+    "deploy": "npm run build && firebase deploy"
+  },
+  "license": "MIT"
+}
